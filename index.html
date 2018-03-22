@@ -3,12 +3,16 @@
 <head>
 </head>
 <body>
-<div id="vader"></div>
-<div id="luke"></div>
-
+<div id="me"></div>
+<div id="her"></div>
+<div id="one"></div>
+<div id="two"></div>
+<div id="three"></div>
+<div id="four"></div>
 <script src="https://cdn.jsdelivr.net/npm/theaterjs@latest/dist/theater.min.js"></script>
 <script>
-  var theater = theaterJS()
+  var theater = theaterJS(
+    {minSpeed:20})
   
   theater
     .on('type:start, erase:start', function () {
@@ -23,15 +27,41 @@
     })
   
   theater
-    .addActor('vader')
-    .addActor('luke')
+    .addActor('me')
+    .addActor('her')
+    .addActor('one')
+    .addActor('two')
+    .addActor('three')
+    .addActor('four')
+    
     
   theater
-    .addScene('vader:Luke...', 400)
-    .addScene('luke:What?', 400)
-    .addScene('vader:I am', 200, '.', 200, '.', 200, '. ')
-    .addScene('Your father!')
-    .addScene(theater.replay)
+    .addScene('me:Hey.... Hiii......', 300)
+    .addScene("me:Are you free?", 300)
+    .addScene("me:Yes or No",400)
+    .addScene("me:nhi bhi hai to last tak dekhna or ha grammatical mistakes ho to please bhul jana",300)
+    .addScene('me:Please see this at your own risk!!!!!',200)
+    .addScene("her:Its a simple letter<br>",200)
+    .addScene("her:bas tareka different hai<br>")
+    .addScene("her:or ek baat or aaj tak sirf letter to principal he likha hai to usi format me ye letter bhi hai<br>")
+
+    .addScene("<h3>To<h3>")
+    .addScene("<h3>Ek Pagal</h3>")
+    .addScene("<h3>Girls Hostel 3rd floor aage se 2nd Room(Sayd)</h3>")
+    .addScene("one:<h3>Subject: ye to secret hai age padh ke he pta lagega</h3>")
+    .addScene("<h3>Miss Pagal,</h3>")
+    .addScene("<h3>This is to inform you that ki is letter ke sare words or sentences puris tarah mere duara likhe gye hai(except one) or Inka kise se bhi koi nata nhi hai(except you).</h3>")
+    .addScene("two:<h3>Aage ki jane vali sari baatien kalpnik to bikul bhi nhi hai or agar thoda senti ho jaye to rona mat</h3>")
+    .addScene("<h3>I know I may not be the first one to wish you but can I be the last one to bring smile on your face.</h3>")
+    .addScene("<h3>HAPPY BIRTHDAY MISS KANIKA RAWAT URF Pagal!!</h3>")
+    .addScene("three:<h3>Or hamesha khush rha kar tere face pe sadness kam cute lgti hai</h3>")
+    .addScene("<h3>And sorry I haven't wished you till now</h3>")
+    .addScene("<h3>Or ha moti ne tuzhe ek gift diya hoga jiska naam kya hai ptani so kuch be rakh le(but ladkiyo type ka mat rkhna please)</h3>")
+    .addScene("four:<h3>Or ha kabhi bhi mere pe gussa aaye to us pe nikal lena I won't mind</h3>")
+    .addScene("<h3>Or ha ek chej or jyda to ni hogya na</h3>")
+    .addScene("<h3>agar hogya ho to sorry for that</h3>")
+    .addScene("<h3>From the one you hate the most</h3>")
+    .addScene("<h3>Ek bewkoof <br>that belong to UNIVERSAL SET - {ME}</h3>")
 </script>
 </body>
 </html>
