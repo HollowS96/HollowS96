@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div id="vader"></div>
+<div id="luke"></div>
+
+<script src=""></script>
+<script>
+  var theater = theaterJS()
+  
+  theater
+    .on('type:start, erase:start', function () {
+      // add a class to actor's dom element when he starts typing/erasing
+      var actor = theater.getCurrentActor()
+      actor.$element.classList.add('is-typing')
+    })
+    .on('type:end, erase:end', function () {
+      // and then remove it when he's done
+      var actor = theater.getCurrentActor()
+      actor.$element.classList.remove('is-typing')
+    })
+  
+  theater
+    .addActor('vader')
+    .addActor('luke')
+    
+  theater
+    .addScene('vader:Luke...', 400)
+    .addScene('luke:What?', 400)
+    .addScene('vader:I am', 200, '.', 200, '.', 200, '. ')
+    .addScene('Your father!')
+    .addScene(theater.replay)
+</script>
+</body>
+</html>
